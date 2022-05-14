@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "565682740657",
+    "firebase_url": "https://greenish-485ac-default-rtdb.firebaseio.com",
+    "project_id": "greenish-485ac",
+    "storage_bucket": "greenish-485ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565682740657:android:eecdb92ed37815a8b97190",
+        "android_client_info": {
+          "package_name": "com.example.android.greenish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565682740657-onoj1htffpka8d875bqtd0t2f152spth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.greenish",
+            "certificate_hash": "a925fcbe7a39a7411f1be6f47c4fcf049da315a9"
+          }
+        },
+        {
+          "client_id": "565682740657-4v1renen1p5laoutoivqfrd16hlglgmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjcyPQNLS6bBN4XHUNdUv8mKbRH2H9s-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565682740657-4v1renen1p5laoutoivqfrd16hlglgmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
