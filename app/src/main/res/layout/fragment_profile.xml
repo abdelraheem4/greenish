@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    >
+
+    <ImageView
+        android:id="@+id/userPhotoImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/default_tree"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="User Photo" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:textColor="@color/black"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name" />
+
+    <TextView
+        android:id="@+id/wateringPlantsTextView"
+        android:layout_marginTop="12dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rectangle_11"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Watering: "
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="italic"
+        android:paddingHorizontal="12dp"
+        android:typeface="serif"
+        app:drawableStartCompat="@drawable/watering_plants"
+        app:drawableTint="@color/black" />
+
+    <TextView
+        android:id="@+id/pottedPlantsTextView"
+        android:layout_marginTop="12dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_11"
+        android:textColor="@color/black"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Plant: "
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="italic"
+        android:paddingHorizontal="12dp"
+        android:typeface="serif"
+        app:drawableStartCompat="@drawable/potted_plant"
+        app:drawableTint="@color/black" />
+
+</LinearLayout>

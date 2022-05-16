@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    translatable attribute points out that this attribute will be the same for all locales,
+    means if don't put this attribute, you should always localize this resource,
+    otherwise tell people and compiler that this is unique for all locales by specifying this attribute.
+-->
+    <string name="google_maps_API_key" translatable="false">
+        AIzaSyAeFqRtNg698LaEKBuseavzbFs3TebzmsQ
+    </string>
+</resources>

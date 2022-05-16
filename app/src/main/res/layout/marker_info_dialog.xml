@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoLayoutCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#687742"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewMarkerInfoDialog"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/default_tree" />
+
+        <TextView
+            android:id="@+id/ageTextViewMarkerInfoDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/lastWateringTextViewMarkerInfoDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Last watering"
+            android:textColor="@color/black"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/needForWaterTextViewMarkerInfoDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Need for water"
+            android:textColor="@color/black"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/plantedByTextViewMarkerInfoDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Planted by"
+            android:textColor="@color/black"
+            android:typeface="serif" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/wateringATreeFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#9EB753"
+            android:contentDescription="Water"
+            android:src="@drawable/watering_plants" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

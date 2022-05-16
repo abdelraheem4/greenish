@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_centerVertical="true"
     android:background="@drawable/log_in"
-    tools:context=".Login">
+    tools:context=".ui.LoginActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
         android:hint="Email"
         android:paddingHorizontal="12dp"
         android:textColor="@color/black"
-        android:textStyle="italic"
+        android:textColorHint="@color/text_hint_color"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -65,7 +65,8 @@
             android:background="@android:color/transparent"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColorHint="#859CCC65" />
+            android:textColorHint="@color/text_hint_color"
+            android:typeface="serif" />
 
         <ImageButton
             android:id="@+id/passwordVisibilityImageButton"

@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom Colors. -->
+    <color name="status_bar_color">#477019</color>
+    <color name="nav_bar_color">#449348</color>
+    <color name="tool_bar_color">#446129</color>
+    <color name="text_hint_color">#859CCC65</color>
 </resources>

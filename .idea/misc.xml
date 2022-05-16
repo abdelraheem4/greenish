@@ -3,6 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/emu8086/greenish/app/src/main/res/drawable/ic_capture_a_pic.xml" value="0.127" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/drawable/ic_user.xml" value="0.127" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/activity_login.xml" value="0.1671875" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/activity_map.xml" value="0.20885416666666667" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.1" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/fragment_map.xml" value="0.20885416666666667" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/fragment_my_dialog.xml" value="0.20885416666666667" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/fragment_profile.xml" value="0.20885416666666667" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/fragment_settings.xml" value="0.20885416666666667" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/marker_info_dialog.xml" value="0.19074074074074074" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/nav_header.xml" value="0.20885416666666667" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/layout/tool_bar.xml" value="0.20885416666666667" />
+        <entry key="..\:/emu8086/greenish/app/src/main/res/menu/drawer_menu.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.12158054711246201" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.12158054711246201" />
