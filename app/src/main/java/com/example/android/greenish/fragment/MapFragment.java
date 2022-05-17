@@ -84,7 +84,9 @@ public class MapFragment extends Fragment  implements OnMapReadyCallback,
     private GoogleMap mMap;
     private Circle mCircle;
     private Marker mMarker;
+    private LatLng mLatLng;
     private Location userLocation;
+    private MarkerInfo markerInfo;
     private FusedLocationProviderClient mFusedLocationProviderClient;
     private ArrayList<Marker> markers = new ArrayList<>();
 
@@ -104,10 +106,11 @@ public class MapFragment extends Fragment  implements OnMapReadyCallback,
             super.onLocationResult(locationResult);
             Log.d(TAG, "onLocationResult: - triggered");
             userLocation = locationResult.getLastLocation();
-            LatLng latLng = new LatLng(userLocation.getLatitude(), userLocation.getLongitude());
-            addCircle(latLng, GEOFENCE_RADIUS);
-            MarkerInfo markerInfo = new MarkerInfo();
-            markerInfo.setLatLng(latLng);
+            mLatLng = new LatLng(userLocation.getLatitude(), userLocation.getLongitude());
+            addCircle(mLatLng, GEOFENCE_RADIUS);
+            markerInfo = new MarkerInfo();
+            markerInfo.setLatLng(mLatLng);
+            markerInfo.setTitle(mLatLng.latitude + ", " + mLatLng.longitude);
             addMarker(context, markerInfo, R.drawable.ic_user);
             detectIfMarkerWithinBoundary(mCircle);
 
@@ -499,10 +502,16 @@ public class MapFragment extends Fragment  implements OnMapReadyCallback,
                         return;
                     }
 
-                    double latitude = latLng[0].latitude; // can be replaced with userLocation.getLatitude();
-                    double longitude = latLng[0].longitude; // can be replaced with userLocation.getLongitude();
+                    if (mLatLng == null)
+                        return;
+
+                    if (markerInfo == null)
+                        return;
+
+                    double latitude = markerInfo.getLatitude(); // can be replaced with userLocation.getLatitude();
+                    double longitude = markerInfo.getLongitude(); // can be replaced with userLocation.getLongitude();
                     MarkerInfo markerInfo = new MarkerInfo();
-                    markerInfo.setLatLng(new LatLng(latitude, longitude));
+                    markerInfo.setLatLng(mLatLng);
                     markerInfo.setIcon(vectors[0]);
                     moveCamera(markerInfo, ZoomLevel.BUILDINGS_LEVEL);
 
@@ -530,8 +539,8 @@ public class MapFragment extends Fragment  implements OnMapReadyCallback,
         } finally {
             if (list != null && list.size() > 0) {
                 Address address = list.get(0);
-                addressInfo.add(address.getLatitude()+"");
-                addressInfo.add(address.getLongitude()+"");
+                addressInfo.add(lat+"");
+                addressInfo.add(lng+"");
                 addressInfo.add(address.getCountryName());
                 addressInfo.add(address.getAdminArea());
                 addressInfo.add(address.getSubAdminArea());
